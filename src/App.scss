@@ -1,0 +1,11 @@
+.admin-container {
+  font-size: 32px;
+  transition: margin-left .5s;
+  display: flex;
+
+  & > .admin-content {
+    flex: 1;
+    padding: 16px;
+    display: flex;
+  }
+}

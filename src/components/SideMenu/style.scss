@@ -1,0 +1,52 @@
+.side-menu-container {
+  display: flex;
+
+  .menu-opener {
+    font-size: 21px;
+    padding: 18px;
+    height: 58px;
+    box-sizing: border-box;
+    background: black;
+    color: white;
+    cursor: pointer;
+  }
+};
+
+.sidenav {
+  height: calc(100vh - 63px);
+  width: 0;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 16px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  position: relative;
+  box-sizing: border-box;
+  justify-content: space-between;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.sidenav a {
+  padding: 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  font-size: 36px;
+  text-align: right;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav a {font-size: 18px;}
+}
